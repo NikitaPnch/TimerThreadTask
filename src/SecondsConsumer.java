@@ -1,11 +1,9 @@
 public class SecondsConsumer extends Thread {
 
     private final TimerProducer timer;
-    private final int step;
 
-    public SecondsConsumer(TimerProducer timer, int step) {
+    public SecondsConsumer(TimerProducer timer) {
         this.timer = timer;
-        this.step = step;
     }
 
     @Override

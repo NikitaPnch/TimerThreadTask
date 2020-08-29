@@ -16,7 +16,7 @@ public class Main {
         listWords.add("семь");
         listWords.add("восемь");
 
-        SecondsConsumer secondsConsumer = new SecondsConsumer(timerProducer, 1);
+        SecondsConsumer secondsConsumer = new SecondsConsumer(timerProducer);
         WordsConsumer wordsConsumer = new WordsConsumer(listWords, 5, timerProducer);
         WordsConsumer wordsConsumerSecond = new WordsConsumer(listWords, 7, timerProducer);
 
